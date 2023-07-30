@@ -1,0 +1,30 @@
+* {
+	background-color: #121212;
+	color: #efefef;
+}
+
+.highlightBox {
+	border: 1px solid #333333;
+	border-radius: 5px;
+	padding: 15px;
+}
+
+
+
+body {
+	margin: 0;
+	display: inline-block;
+}
+
+#sidebar {
+	position: absolute;
+	width: 30vw;
+	max-width: 500px;
+	height: 100vh;
+	border-right: 5px solid red;
+	padding: 0 20px;
+}
+
+#spotifyPlayer {
+	margin-top: 20px;
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<title>Dashboard</title>
+    <meta name="description" content="Dashboard">
+    <meta name="keywords" content="dashboard">
+	<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+	<script src="{{ url_for('static', filename='main.js')}}"></script>
+</head>
+<body>
+	<div id="sidebar">
+		<div id="spotifyPlayer" class="highlightBox">
+			<h2>{{ session["currentSong"] }}</h2>
+			<div id="songControls">
+				<a href="javascript:prevSong()"> prev </a>
+				<p>|</p>
+				<a href="javascript:toggleSongPlaying()"> toggle </a>
+				<p>|</p>
+				<a href="javascript:nextSong()"> next </a>
+			</div>
+			<div id="volumeSlider">
+				<input type="slider" name="volume">
+			</div>
+		</div>
+		<p>Next up:</p>
+		<div class="song highlightBox">
+			<img href="album" />
+			<p>Queue'd song name!</p>
+			<p>Artist Name | Album Name</p>
+		</div>
+	</div>
+
+
+	<div id="content">
+		<div id="trello">
+			<h1> Trello! </h1>
+			<h3>Next task:</h3>
+			<div id="nextTask" class="highlightBox">
+				<p>Do this thing</p>
+</body>
+</html>
